@@ -18,5 +18,10 @@ resp = requests.post(URL, json=new_pokemon)
 
 response= requests.get(URL).json()
 
-pprint(response)
+
+
 pprint(resp.json())
+
+for x in response:
+    print(f"{x['name']} is an awesome Pokemon!  Its number is {x['number']} and its type is: {x['pokemon_type']}\n  Weaknesses include {x['weaknesses']} and evolutions are {x['evolutions']}.\n")
+    
