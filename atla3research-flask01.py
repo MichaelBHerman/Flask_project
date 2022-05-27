@@ -22,10 +22,6 @@ from flask import jsonify
 import json
 from flask import request
 
-
-
-
-
 app= Flask(__name__)
 
 favorite_pokemons= [{

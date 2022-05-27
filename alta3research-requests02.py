@@ -11,11 +11,12 @@ new_pokemon= {
     "weaknesses": ["Fighting"],
     "evolutions": ["Munchlax"]
 }
-new_hero= json.dumps(new_pokemon)
+
+new_pokemon= json.dumps(new_pokemon)
+
 resp = requests.post(URL, json=new_pokemon)
 
 response= requests.get(URL).json()
 
 pprint(response)
 pprint(resp.json())
-
